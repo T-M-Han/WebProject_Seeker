@@ -1,0 +1,362 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.header-text {
+    flex: 1;
+}
+
+.header-text p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 110px;
+    margin: 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+}
+
+.header-icons a {
+    margin-right: 10px;
+}
+
+.header-icons img {
+    padding-top: 7px;;
+    margin: 5px;
+    width: 16px;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    top: 6.5px;
+    right: 160px;
+    padding:5px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.search-box input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.search-box button:hover {
+    background-color: #595959;
+}
+
+/* Show animation */
+@keyframes slideIn {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Navigation styles */
+nav {
+    background-color: #e6e6e6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #000000;
+    margin-left: 25px;
+    margin-right: 22px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+nav {
+    display: block;
+}
+
+nav.open {
+    display: block;
+}
+
+/* Hide the menu toggle button on larger screens */
+@media screen and (min-width: 1151px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+/* Show the menu toggle button only for smaller screens */
+@media screen and (max-width: 1151px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 999;
+    }
+
+    nav {
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #e6e6e6;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        z-index: 998;
+    }
+
+    nav a {
+        color: #000000;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+    }
+
+    nav.open {
+        display: block;
+    }
+}
+
+/* CSS code to style the shopping cart icon and the cart item count */
+#cartItemCount {
+    background-color: #000000;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 25%;
+    font-size: 8px;
+    margin-left: -10px;
+    text-decoration: none;
+}
+
+.cartcontainer {
+    padding: 5px;
+}
+
+.cart-table,
+.summary-table {
+    padding: 0px;
+    flex-basis: 100%;
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Center align image in table cell */
+td img {
+    width: 100%;
+    max-width: 150px;
+    min-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+}
+
+.buy-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #555555;
+}
+
+.remove-item{
+    font-size: 12px;
+    padding: 0px;
+    color: #000000d1;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles */
+.footer-section {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.footer-info h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-info p {
+    color: #ffffff;
+    text-align: center;
+}
+
+.social-icons {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.social-icons img {
+    width: 20px;
+}
+
+/* Footer bottom styles */
+.footer-bottom {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom img{
+    max-width: 100px;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+    
+    .header-icons a {
+        margin-right: 5px;
+    }
+    
+    .header-icons img {
+        width: 18px;
+    }
+    
+    nav {
+        padding: 5px;
+    }
+    
+    nav a {
+        margin-right: 5px;
+    }
+    
+    .footer-section {
+        padding: 10px;
+    }
+    
+    .social-icons a {
+        margin-right: 3px;
+    }
+    
+    .social-icons img {
+        width: 15px;
+    }
+}

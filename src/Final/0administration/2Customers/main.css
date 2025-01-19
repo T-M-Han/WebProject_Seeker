@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.header-text {
+    flex: 1;
+}
+.header-text p {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10;
+    margin-left: 50px;
+}
+button.logout-btn {
+    border: none;
+    background-color: transparent;
+    color: #000000;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 20px;
+}
+button.logout-btn:hover {
+    color: #ff0000;
+}
+
+nav {
+    background-color: #e6e6e6;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav a {
+    color: #000000;
+    margin-left: 25px;
+    margin-right: 22px;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px; 
+    z-index: 999; 
+}
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+.menu-toggle.open span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+.menu-toggle.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+nav {
+    display: block;
+}
+nav.open {
+    display: block;
+}
+@media screen and (min-width: 1000px) {
+    .menu-toggle {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 2px; 
+        left: 10px; 
+        z-index: 999; 
+    }
+    nav {
+        display: none;
+        position: relative;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #e6e6e6;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        z-index: 998; 
+    }
+    nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 10px;
+        display: block; 
+    }
+    nav.open {
+        display: block; 
+    }
+}
+
+h1, h2, h3 {
+    color: #000000;
+}
+
+.container0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 92%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.search-container {
+    text-align: right;
+    width: 100%;
+}
+
+.search-container form {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 4000px;
+}
+
+.search-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .container0 {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 10px;
+    }
+
+    .search-container {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .search-container input[type="text"] {
+        width: 100%;
+        margin-right: 20;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px 10px 10px;
+}
+
+.table-container1 {
+    max-height: 630px;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.table1 {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table1 th, .table1 td {
+    padding: 8px;
+    text-align: center;
+}
+
+.table1 th {
+    background-color: #f2f2f2;
+}
+
+.table1 tbody {
+    max-height: 50px;
+    overflow-y: auto;
+}
+
+.table1 tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+button.unblock-btn {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.unblock-btn:hover {
+    background-color: #303030;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+    color: #ffffff;
+}
