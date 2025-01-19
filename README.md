@@ -37,10 +37,10 @@ This project demonstrates the integration of front-end design with a backend dat
 5. Admins can log in to the admin panel for product management.
 
 ## Folder Structure
-/src          - Contains web project files (HTML, CSS, JS, PHP)
-/database     - Database file (seekerdb.sql)
-/docs         - Project Proposal, Report, User Manual
-README.md     - Project documentation
+- /src          - Contains web project files (HTML, CSS, JS, PHP)
+- /database     - Database file (seekerdb.sql)
+- /docs         - Project Proposal, Report, User Manual
+- README.md     
 
 ## Contact
 Thaw Myo Han  
