@@ -1,5 +1,5 @@
 # WebProject_Seeker
-An academic web project for an online sneakers store that allows users to browse, search, and purchase sneakers. 
+An academic web project for an online sneakers store that allows users to browse, search, and purchase sneakers.
 This project demonstrates the integration of front-end design with a backend database system for product management.
 
 ## Features
