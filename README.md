@@ -16,7 +16,7 @@ This project demonstrates the integration of front-end design with a backend dat
 - **Web Server:** Apache
 
 ## Installation
-1. Clone the repository: git clone
+1. Clone the repository: git clone - https://github.com/T-M-Han/WebProject_Seeker.git
 2. Move files:Copy the project files(src/Final) to your web server's root directory (htdocs for XAMPP or www for WAMP).
 3. Import the database:
     Open phpMyAdmin and create a new database.
